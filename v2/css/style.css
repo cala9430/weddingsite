@@ -1,0 +1,319 @@
+html,body{
+	margin:0px;
+}
+
+*{
+	margin:0px;
+}
+
+section {
+	z-index: 1; /* needed for setting pseudo-element z-index */
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+a{
+	display:block;
+	width:100%;
+	height:100%;
+}
+
+section a {
+		display:inline;
+		width:auto;
+		height:auto;
+		position: relative;
+		display: inline-block;
+		outline: none;
+		color: #404d5b;
+		vertical-align: bottom;
+		text-decoration: underline;
+		white-space: nowrap;
+}
+
+section a:hover{
+	background-color: #404d5b;
+	color: #FFFFFF;
+	text-decoration: underline;
+	white-space: nowrap;
+}
+
+h1{
+	text-align: center;
+	margin-bottom: 15px;
+	padding-top: 5%;
+	font-size: 300%;
+}
+
+#container{
+	top: 0;
+	left: 0;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	overflow-y:auto;
+	overflow-x:hidden;
+}
+
+.content{
+	width: 100%;
+	height: 100%;
+}
+#intro{
+	position:relative;
+	background:url("../img/firstBG.jpg")no-repeat fixed;
+	background-size:cover;
+	background-position:center;
+	color: white;
+}
+#home{
+	background:url("../img/clean_textile.png") repeat;
+}
+#homeText{
+	text-align: center;
+}
+#history{
+	background:url("../img/clean_textile.png") repeat;
+}
+#historyText p{
+	text-align: justify;
+	margin: 1%;
+}
+#montevideo{
+	background: url("../img/thirdBG.jpg") no-repeat fixed;
+	background-size: cover;
+	background-position:center;
+	color: white;
+}
+#montevideoText{
+	background-color: rgba(0,0,0,0.2);
+}
+#montevideoText h2{
+	font-size: larger;
+}
+#montevideoText h3{
+	font-size: initial;
+}
+#montevideoText a{
+	color:white;
+}
+
+#punta{
+	background: url("../img/fourth.jpg") no-repeat fixed;
+	background-size: cover;
+	background-position:center;
+	color: white;
+}
+#puntaText{
+	background-color: rgba(0,0,0,0.2);
+}
+#puntaText h2{
+	font-size: larger;
+}
+#puntaText h3{
+	font-size: initial;
+}
+#puntaText a{
+	color:white;
+}
+
+#ceremony{
+	background:url("../img/fifth.jpg")no-repeat fixed;
+	background-size: cover;
+	background-position:center;
+	color:white;
+}
+
+#ceremonyText{
+	text-align: center;
+}
+
+#ceremonyText h2{
+	font-size: larger;
+}
+
+#presents{
+	background:url("../img/clean_textile.png") repeat;
+}
+
+#presentsText{
+	color:rgb(120,120,120);
+}
+#presentsText h2{
+	font-size: larger;
+}
+#presentsText a{
+	text-decoration: none;
+}
+
+#contact{
+	background:url("../img/clean_textile.png") repeat;
+}
+.presentation{
+	font-size: 200%;
+	max-width:50%;
+	height:70%;
+}
+.presentation h1{
+	padding-top:20%; 
+}
+
+.center{
+	font-family: 'Amaranth', sans-serif;
+	overflow: auto;
+	height:75%;
+}
+.story{
+	height:80%;
+	width:80%;
+	margin:auto;
+}
+
+.arrowDown{
+	height:31.5px;
+	width:58.5px;
+
+	margin:20px auto;
+	display:block;
+
+	background:url("../img/arrow_sprite.png") no-repeat;
+	background-position:top;
+	background-size: cover;
+	background-color: rgba(0,0,0,0.1);
+	-moz-box-shadow: 0 0 25px 25px rgba(0,0,0,0.1);
+	-webkit-box-shadow: 0 0 25px 25px rgba(0,0,0,0.1);
+	box-shadow: 0 0 25px 25px rgba(0,0,0,0.1);
+	z-index:100;
+}
+
+.arrowDown:hover{
+	background:url("../img/arrow_sprite.png") no-repeat;
+	background-position:bottom;
+	background-size: cover;
+	background-color: rgba(0,0,0,0.1);
+	-moz-box-shadow: 0 0 25px 25px rgba(0,0,0,0.1);
+	-webkit-box-shadow: 0 0 25px 25px rgba(0,0,0,0.1);
+	box-shadow: 0 0 25px 25px rgba(0,0,0,0.1);
+	cursor:pointer;
+}
+
+.arrowUp{
+	height:31.5px;
+	width:58.5px;
+
+	margin:0 auto;
+	display:block;
+
+	background:url("../img/arrow_sprite_up.png") no-repeat;
+	background-position:bottom;
+	background-size: cover;
+	background-color: rgba(0,0,0,0.1);
+	-moz-box-shadow: 0 0 25px 25px rgba(0,0,0,0.1);
+	-webkit-box-shadow: 0 0 25px 25px rgba(0,0,0,0.1);
+	box-shadow: 0 0 25px 25px rgba(0,0,0,0.1);
+	z-index:100;
+}
+
+.arrowUp:hover{
+	background:url("../img/arrow_sprite_up.png") no-repeat;
+	background-position:top;
+	background-size: cover;
+	background-color: rgba(0,0,0,0.1);
+	-moz-box-shadow: 0 0 25px 25px rgba(0,0,0,0.1);
+	-webkit-box-shadow: 0 0 25px 25px rgba(0,0,0,0.1);
+	box-shadow: 0 0 25px 25px rgba(0,0,0,0.1);
+	cursor:pointer;
+}
+
+.goToPortuguese{
+	min-width:120px;
+	width: 15%;
+	height: 15%;
+	float:right;
+	padding-top:1%;
+}
+
+.goToPortuguese p {
+	font-family: 'League Script', cursive;
+	font-size:150%;
+	text-decoration:underline;
+	color:white;
+	margin-right:10px;
+	cursor:pointer;
+}
+
+footer{
+	padding: 5px;
+	text-align: center;
+	position:relative;
+	background-color: rgba(77,77,77, 0.9);
+}
+
+footer h3{
+	font-family: 'Stalemate', cursive;
+	color:rgba(244,244,244, 1);
+	display: inline;
+	vertical-align: middle;
+}
+
+footer a{
+	margin-left: 10px;
+	display: inline;
+	vertical-align: middle;
+}
+
+footer img{
+	vertical-align: middle;
+}
+
+@media(min-width: 500px) {
+ 	h1 {
+    	font-family: 'Stalemate', cursive;
+		text-shadow: 4px 4px 0px rgba(0,0,0,0.1); 
+		font-weight: 400%;
+	}
+	#loader{
+		display:none;
+		position:absolute;
+		height:100%;
+		width:100%;
+		background-color:rgba(77,77,77, 0.9);
+		z-index:999999;
+		color:white;
+	}
+	#loader h1{
+		display:inline;
+		margin-left: 40%;
+		text-shadow: 4px 4px 0px rgba(244,244,244, 0.3); 
+	}
+	#loader img{
+		padding-top:25%;
+		width:3%;
+	}
+}
+@media(max-width: 500px) {
+	h1 {
+		font-family: 'Stalemate', cursive;
+		font-family: cursive;
+	}
+	#loader{
+		display:none;
+		position:absolute;
+		height:100%;
+		width:100%;
+		background-color:rgba(77,77,77, 0.9);
+		z-index:999999;
+		color:white;
+		text-align: center;
+
+	}
+	#loader h1{
+		display:none;
+	}
+	#loader img{
+		position: absolute;
+		top:25%;
+		left: 25%;
+		width:50%;
+	}
+}
