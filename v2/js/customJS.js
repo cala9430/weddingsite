@@ -1,7 +1,6 @@
 
 $(document).ready(function(){
 	$("#loader").show();
-	 $('.bxslider').bxSlider();
 });
 
 $(window).load(function(){
