@@ -7,10 +7,15 @@ $(window).load(function(){
 	$.localScroll({
    		target:'#container'
 	});
-	$( "#loader" ).fadeOut(500);
 	$( "#porLink" ).click(function(){
 		showLoaderForTranslate();
 	});
+	var userLang = navigator.language || navigator.userLanguage;
+	if(userLang == 'pt-BR'){
+		translatePage();
+	}else{
+		$( "#loader" ).fadeOut(600);
+	}
 });
 
 function showLoaderForTranslate(){
