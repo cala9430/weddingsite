@@ -300,7 +300,6 @@ footer img{
  	h1 {
     	font-family: 'Stalemate', cursive;
 		text-shadow: 4px 4px 0px rgba(0,0,0,0.1); 
-		font-weight: 400%;
 		font-size: 450%;
 	}
 	#loader{
@@ -330,6 +329,9 @@ footer img{
 	#montevideo{
 		height:auto;
 	}
+	#presents{
+		height:auto;
+	}
 	div{
 		-webkit-overflow-scrolling: touch;
    		-moz-overflow-scrolling: touch; /* Firefox */
@@ -345,7 +347,6 @@ footer img{
 	
 	h1 {
 		font-family: 'Stalemate', cursive;
-		font-weight: 100%;
 		font-size: 400%;
 	}
 	
@@ -379,4 +380,21 @@ footer img{
     	text-align: center;
     	overflow
 	}
+}
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+  
+	h1{
+		font-size: 500%;
+	}
+	
+	p{
+		font-size: 300%;
+	}
+
 }
