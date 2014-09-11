@@ -58,26 +58,48 @@ h1{
 .content{
 	width: 100%;
 	height: 100%;
-	overflow-y:scroll;
+	overflow:hidden;
 }
 
 #intro{
 	position:relative;
-	background:url("../img/firstBG.jpg")no-repeat fixed;
+	background:url("../img/firstBG.jpeg")no-repeat fixed;
 	background-size:cover;
 	background-position:center;
-	color: white;
+	color: rgb(109,109,109);
 }
+
+#intro h1{
+	text-shadow: 4px 4px 0px rgba(255,255,255,0.1); 
+	text-align:left;
+	margin-left:2%;
+	margin-top:2%;
+}
+
 #home{
+	color:rgb(109,109,109);
 	background:url("../img/clean_textile.png") repeat;
 }
 #homeText{
+	color:rgb(109,109,109);
 	text-align: center;
 }
 #history{
+	color:rgb(109,109,109);
 	background:url("../img/clean_textile.png") repeat;
 }
 #historyText p{
+	color:rgb(109,109,109);
+	text-align: justify;
+	margin: 1%;
+}
+#history2{
+	color:rgb(109,109,109);
+	background:url("../img/clean_textile.png") repeat;
+}
+
+#history2Text p{
+	color:rgb(109,109,109);
 	text-align: justify;
 	margin: 1%;
 }
@@ -170,14 +192,14 @@ h1{
 	height:70%;
 }
 .presentation h1{
-	padding-top:20%; 
+	padding-top:10%; 
 }
 
 .center{
 	font-family: 'Amaranth', sans-serif;
 	overflow: inherit;
 	height:75%;
-	margin-top: 10%;
+	margin-top: 5%;
 }
 
 .story{
@@ -254,7 +276,6 @@ h1{
 	font-family: 'League Script', cursive;
 	font-size:150%;
 	text-decoration:underline;
-	color:white;
 	margin-right:10px;
 	cursor:pointer;
 }
@@ -293,6 +314,12 @@ footer img{
 .line-separator{
 	height:1px;
 	background:#FFFFFF;
+	margin: 25px;
+}
+
+.line-separator-black{
+	height:1px;
+	background:rgb(109,109,109);
 	margin: 25px;
 }
 
@@ -338,7 +365,7 @@ footer img{
 	}
 	
 	.content{
-		overflow-y:visible;
+		overflow:hidden;
 	}
 	
 	.arrowDown{
