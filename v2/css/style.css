@@ -53,6 +53,7 @@ h1{
 	height: 100%;
 	overflow-y:auto;
 	overflow-x:hidden;
+		min-width:900px;
 }
 
 .content{
@@ -64,7 +65,7 @@ h1{
 
 #intro{
 	position:relative;
-	background:url("../img/firstBG.jpeg")no-repeat fixed;
+	background:url("../img/firstBG.jpeg")no-repeat;
 	background-size:cover;
 	background-position:center;
 	color: rgb(109,109,109);
@@ -84,19 +85,27 @@ h1{
 #homeText{
 	color:rgb(109,109,109);
 	text-align: center;
+	display: block;
 }
 #history{
 	color:rgb(109,109,109);
 	background:url("../img/clean_textile.png") repeat;
+	overflow-y:hidden;
+}
+
+#historyText{
+	overflow-y:hidden;
 }
 #historyText p{
 	color:rgb(109,109,109);
 	text-align: justify;
-	margin: 1%;
+	overflow-y:hidden;
 }
 #history2{
 	color:rgb(109,109,109);
 	background:url("../img/clean_textile.png") repeat;
+	min-width:900px;
+	overflow-y:hidden;
 }
 
 #history2Text p{
@@ -105,7 +114,7 @@ h1{
 	margin: 1%;
 }
 #montevideo{
-	background: url("../img/thirdBG.jpg") no-repeat fixed;
+	background: url("../img/thirdBG.jpg") no-repeat;
 	background-size: cover;
 	background-position:center;
 	color: white;
@@ -125,7 +134,7 @@ h1{
 }
 
 #punta{
-	background: url("../img/fourth.jpg") no-repeat fixed;
+	background: url("../img/fourth.jpg") no-repeat;
 	background-size: cover;
 	background-position:center;
 	color: white;
@@ -145,7 +154,7 @@ h1{
 }
 
 #ceremony{
-	background:url("../img/fifth.jpg")no-repeat fixed;
+	background:url("../img/fifth.jpg") no-repeat;
 	background-size: cover;
 	background-position:center;
 	color:white;
@@ -208,9 +217,9 @@ h1{
 }
 
 .presentation{
-	font-size: 200%;
+	font-size: 100%;
 	max-width:50%;
-	height:70%;
+	height:80%;
 }
 .presentation h1{
 	padding-top:10%; 
@@ -230,8 +239,8 @@ h1{
 }
 
 .arrowDown{
-	height:31.5px;
-	width:58.5px;
+	height:31px;
+	width:58px;
 
 	margin:auto;
 	display:block;
@@ -239,10 +248,6 @@ h1{
 	background:url("../img/arrow_sprite.png") no-repeat;
 	background-position:top;
 	background-size: cover;
-	/*background-color: rgba(0,0,0,0.1);
-	-moz-box-shadow: 0 0 25px 25px rgba(0,0,0,0.1);
-	-webkit-box-shadow: 0 0 25px 25px rgba(0,0,0,0.1);
-	box-shadow: 0 0 25px 25px rgba(0,0,0,0.1);*/
 	z-index:1000;
 }
 
@@ -250,12 +255,8 @@ h1{
 	background:url("../img/arrow_sprite.png") no-repeat;
 	background-position:bottom;
 	background-size: cover;
-	/*background-color: rgba(0,0,0,0.1);
-	-moz-box-shadow: 0 0 25px 25px rgba(0,0,0,0.1);
-	-webkit-box-shadow: 0 0 25px 25px rgba(0,0,0,0.1);
-	box-shadow: 0 0 25px 25px rgba(0,0,0,0.1);*/
 	cursor:pointer;
-		z-index:1000;
+	z-index:1000;
 }
 
 .arrowUp{
@@ -296,7 +297,7 @@ h1{
 }
 
 .goToPortuguese p {
-	font-family: 'League Script', cursive;
+	font-family: 'Arial', cursive;
 	font-size:150%;
 	text-decoration:underline;
 	margin-right:10px;
@@ -346,9 +347,9 @@ footer img{
 	margin: 25px;
 }
 
-@media(min-width: 800px) {
+@media(min-width: 900px) {
  	h1 {
-    	font-family: 'Stalemate', cursive;
+		font-family: 'Stalemate', cursive;
 		text-shadow: 4px 4px 0px rgba(0,0,0,0.1); 
 		font-size: 450%;
 	}
@@ -371,7 +372,7 @@ footer img{
 		width:3%;
 	}
 }
-@media(max-width: 800px) {
+@media(max-width: 900px) {
 	#montevideo{
 		height:auto;
 	}
@@ -391,7 +392,7 @@ footer img{
 		visibility: hidden;
 	}
 	
-	h1 {
+	h1{
 		font-family: 'Stalemate', cursive;
 		font-size: 400%;
 	}
@@ -428,19 +429,25 @@ footer img{
 }
 
 @media
-only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (   min--moz-device-pixel-ratio: 2),
-only screen and (     -o-min-device-pixel-ratio: 2/1),
-only screen and (        min-device-pixel-ratio: 2),
-only screen and (                min-resolution: 192dpi),
-only screen and (                min-resolution: 2dppx) { 
-  
-	h1{
-		font-size: 500%;
+only screen and (-webkit-max-device-pixel-ratio : 1.5),
+only screen and (max-device-pixel-ratio : 1.5) { 
+	#punta{
+		background-attachment: fixed;
 	}
-	
-	p{
-		font-size: 300%;
-	}
+}
 
+@media 
+(-webkit-min-device-pixel-ratio: 2), 
+(min-resolution: 192dpi) { 
+	p{
+		font-size:120%;
+	}
+}
+
+@media 
+((-webkit-min-device-pixel-ratio: 2), 
+(min-resolution: 192dpi) and max-width:900px) { 
+	p{
+		font-size:120%;
+	}
 }
