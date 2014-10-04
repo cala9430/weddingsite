@@ -216,6 +216,18 @@ h1{
 	color:rgb(109,109,109);
 }
 
+#gallery{
+	background:url("../img/clean_textile.png") repeat;
+}
+
+#gallery h1{
+	color:rgb(109,109,109);
+}
+
+#galleryText{
+	color:rgb(109,109,109);
+}
+
 .presentation{
 	font-size: 100%;
 	max-width:50%;
@@ -431,7 +443,8 @@ footer img{
 @media
 only screen and (-webkit-max-device-pixel-ratio : 1.5),
 only screen and (max-device-pixel-ratio : 1.5) { 
-	#punta{
+	
+	#punta, #montevideo, #intro, #ceremony{
 		background-attachment: fixed;
 	}
 }
